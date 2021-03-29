@@ -3,4 +3,4 @@ str="'$*'"
 array="${@}"
 
 echo $array
-git add . && git commit -m "'$array'"
+git add . && git commit -m "$array"
