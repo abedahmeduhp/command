@@ -1,7 +1,7 @@
 #!/bin/bash
 str="'$*'"
 array="${@}"
-echo $*
+
 echo $array
 git add . && git commit -a -m "$array"
 
@@ -13,3 +13,6 @@ git push origin --all
 # for b in `git branch -r | grep -v -- '->'`; do git branch --track ${b##origin/} $b; done
 
 # git fetch --all
+
+#kill process server
+#sudo kill -9 $(sudo lsof -t -i:5000)
