@@ -1,7 +1,7 @@
 #!/bin/bash
 str="'$*'"
 array="${@}"
-
+echo $*
 echo $array
 git add . && git commit -a -m "$array"
 
