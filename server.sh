@@ -6,4 +6,4 @@ echo $array
 git add . && git commit -m "$array"
 
 
-
+git push origin --all
